@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 
-import Home from "./Pages/HomePage/Home";
-import Site from "./Pages/SitePage/Site";
-import Products from "./Pages/ProudctsPage/Products";
-import Contact from "./Pages/ContactPage/Contact";
+import Home from "./Pages/Home/Home";
+import Site from "./Pages/Site/Site";
+import Products from "./Pages/Proudcts/Products";
+import Contact from "./Pages/Contact/Contact";
 import MainLayout from "./Components/MainLayout/MainLayout";
 
 function App() {

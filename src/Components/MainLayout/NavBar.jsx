@@ -4,9 +4,9 @@ import { BsTelephone } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
 import { AiOutlineHome } from "react-icons/ai";
 
-import MainIcon from "../../images/MainIcon.png"
+import logo from "../../images/logo.jpg";
 
-export default function NavBar({ isOpen, onClose }) {
+export default function NavBar({ isOpen, onClick }) {
   const NavContent = [
     {
       icon: <BsTelephone />,
@@ -37,23 +37,26 @@ export default function NavBar({ isOpen, onClose }) {
           isOpen ? "translate-x-0" : "translate-x-full"
         } md:hidden`}
       >
-        
-        <div className="flex flex-col-reverse justify-center items-center gap-16 px-6 mt-4">
+        <div className="flex flex-col-reverse justify-center items-center gap-16 px-6 mt-7 ">
           {NavContent.map((item, index) => (
-            <NavLink key={index} to={item.to} onClick={onClose}>
-              <div className="flex items-center justify-end gap-2 text-lg font-bold  text-primary">
+            <NavLink key={index} to={item.to} onClick={onClick} className="hover:underline underline-offset-8 hover:decoration-primary">
+              <div className="flex items-center justify-end gap-2 text-lg font-bold  text-primary ">
                 <p>{item.text}</p>
                 {item.icon}
               </div>
             </NavLink>
           ))}
-          <img src={MainIcon} alt="MainIcon" className="w-[150px] h-[150px]"/>
+          <img
+            src={logo}
+            alt="MainIcon"
+            className="w-[150px] h-[150px] rounded-3xl"
+          />
         </div>
       </div>
       <nav className="hidden md:flex gap-5">
         {NavContent.map((item, index) => (
           <NavLink key={index} to={item.to}>
-            <div className="flex items-center text-xl font-bold">
+            <div className="flex items-center gap-1.5 text-lg font-bold">
               <p>{item.text}</p>
               {item.icon}
             </div>
