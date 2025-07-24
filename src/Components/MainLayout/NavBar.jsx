@@ -21,7 +21,7 @@ export default function NavBar({ isOpen, onClick }) {
     {
       icon: <CiLocationOn />,
       text: "موقع الشركة",
-      to: "/site",
+      to: "/location",
     },
     {
       icon: <AiOutlineHome />,
