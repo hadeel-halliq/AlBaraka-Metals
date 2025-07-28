@@ -18,7 +18,7 @@ export default function Products() {
   return (
     <div className="bg-backGroundColor pb-20">
       <div className="container mx-auto px-10">
-        <div className="grid gap-10 place-items-center grid-cols-1 sm:grid-cols-[repeat(auto-fill,minmax(350px,1fr))]">
+        <div className="grid pt-14 gap-10 place-items-center grid-cols-1 sm:grid-cols-[repeat(auto-fill,minmax(350px,1fr))]">
           {productTitles.map((title, index) => (
             <ProductTable key={index} title={title} headers={headers} data={data}/>
           ))}
