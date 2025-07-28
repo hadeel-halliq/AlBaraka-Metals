@@ -10,7 +10,7 @@ export default function Button({ buttonName, buttonStyle, onClick, children }) {
 
   const resolvedStyle = `${baseStyle} ${styleVariants[buttonStyle]}`;
   return (
-    <button onClick={onClick} className={resolvedStyle}>
+    <button type="submit" onClick={onClick} className={resolvedStyle}>
       {children ? children : buttonName}
     </button>
   );

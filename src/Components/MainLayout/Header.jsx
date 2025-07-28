@@ -13,7 +13,7 @@ export default function Header() {
   };
   return (
     <header className="bg-backGroundColor py-6">
-      <div className="container mx-auto px-15">
+      <div className="container mx-auto px-10">
         <div className="py-1.5 px-3 flex flex-row-reverse md:flex-row justify-between items-center border border-primary rounded-2xl ">
           <img
             src={MainIcon}

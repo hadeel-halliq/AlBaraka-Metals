@@ -3,10 +3,10 @@ import StatisticsButton from "./StatisticsButton";
 
 import ironFactory from "../../../images//ironFactory.png";
 
-export default function SectionOne() {
+export default function HeroSection() {
   return (
   <div className="bg-backGroundColor pt-12 pb-20">
-        <div className="container mx-auto px-15 flex flex-col items-center gap-7 md:flex md:flex-row justify-between">
+        <div className="container mx-auto px-10 flex flex-col items-center gap-7 md:flex md:flex-row justify-between">
           <img
             src={ironFactory}
             alt="ironFactory"

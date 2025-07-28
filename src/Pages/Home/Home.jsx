@@ -1,16 +1,16 @@
-import SectionFour from "./Components/SectionFour";
-import SectionOne from "./Components/SectionOne";
-import SectionThree from "./Components/SectionThree";
-import SectionTwo from "./Components/SectionTwo";
-import StatisticsButton from "./Components/StatisticsButton";
+import HeroSection from "./Components/HeroSection";
+import AboutSection from "./Components/AboutSection";
+import ServicesSection from "./Components/ServicesSection";
+import ProductionProcess from "./Components/ProductionProcess";
+
 
 export default function Home() {
   return (
     <>
-      <SectionOne/>
-      <SectionTwo />
-      <SectionThree />
-      <SectionFour />
+      <HeroSection/>
+      <AboutSection />
+      <ServicesSection />
+      <ProductionProcess />
     </>
   );
 }

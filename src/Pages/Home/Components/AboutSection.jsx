@@ -4,10 +4,10 @@ import machin1 from "../../../images/machin1.png";
 import machin2 from "../../../images/machin2.png";
 import machin3 from "../../../images/machin3.png";
 
-export default function SectionTwo() {
+export default function AboutSection() {
   return (
     <div className="bg-white py-7 shadow-[34px_0_13px_0_rgba(0,0,0,0.25)]">
-      <div className="container mx-auto px-15 flex flex-col items-center gap-7 md:flex md:flex-row ">
+      <div className="container mx-auto px-10 flex flex-col items-center gap-7 md:flex md:flex-row ">
         <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px]">
           <img
             src={machin1}

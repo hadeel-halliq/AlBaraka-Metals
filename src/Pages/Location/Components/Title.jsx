@@ -1,9 +1,9 @@
 
 export default function Title({text}) {
   return (
-    <>
-      <h2 className="text-center">{text}</h2>
-      <hr className="w-10/12"/>
-    </>
+    <div>
+      <h2 className="font-bold text-xl text-center text-primary mb-2">{text}</h2>
+      <hr className="w-full"/>
+    </div>
   )
 }

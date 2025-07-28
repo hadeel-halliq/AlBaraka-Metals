@@ -12,10 +12,10 @@ import Button from "../../../Components/Common/Button";
 
 import { FaWhatsapp } from "react-icons/fa6";
 
-export default function SectionFour() {
+export default function ProductionProcess() {
   return (
-    <div className="bg-white py-7 shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)]">
-      <div className="container mx-auto px-15">
+    <div className="bg-white py-7 shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)] ">
+      <div className="container mx-auto px-10">
         <Tittle text="  مراحل التصنيع في شركة البركة" />
         <div className="flex flex-wrap-reverse items-center justify-evenly lg:justify-between">
           <div dir="rtl" className="flex flex-col gap-9">
