@@ -3,11 +3,17 @@ import AboutSection from "./Components/AboutSection";
 import ServicesSection from "./Components/ServicesSection";
 import ProductionProcess from "./Components/ProductionProcess";
 
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "الصفحة الرئيسية | معادن البركة";
+    
+  }, []);
+
   return (
     <>
-      <HeroSection/>
+      <HeroSection />
       <AboutSection />
       <ServicesSection />
       <ProductionProcess />

@@ -5,7 +5,13 @@ import phoneIcon from "../../images/phoneIcon.png";
 import emailIcon from "../../images/emailIcon.png";
 import EmailContactForm from "./Components/EmailContactForm";
 
+import { useEffect } from "react";
+
 export default function Contact() {
+  useEffect(() => {
+    document.title = "تواصل معنا | معادن البركة";
+  }, []);
+
   return (
     <div className="bg-backGroundColor pb-20">
       <div className="container mx-auto px-10">
