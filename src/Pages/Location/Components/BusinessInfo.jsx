@@ -12,22 +12,24 @@ export default function BusinessInfo() {
       <InfoItem 
         icon={time}
         title="ساعات العمل : "
-        paragraph="8:00 صباحاً _ 4:00 مساً (الأحد-الخميس)"
+        label="8:00 صباحاً _ 4:00 مساً (الأحد-الخميس)"
       />
       <InfoItem 
         icon={phone}
         title="الهاتف : "
-        paragraph="000 000 900 963+"
+        label="000 000 900 963+"
+        labelType="link"
+        href="tel:000 000 900 963+"
       />
       <InfoItem 
         icon={locationIcon}
         title="العنوان : "
-        paragraph="حي السريان، شارع المكتب، حلب، سوريا"
+        label="حي السريان، شارع المكتب، حلب، سوريا"
       />
       <InfoItem 
         icon={manager}
         title="المدير : "
-        paragraph="محمد محمد محمد"
+        label="محمد محمد محمد"
       />
     </div>
   )

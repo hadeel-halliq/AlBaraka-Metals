@@ -4,6 +4,7 @@ import ServicesSection from "./Components/ServicesSection";
 import ProductionProcess from "./Components/ProductionProcess";
 
 import { useEffect } from "react";
+import ProductsSection from "./Components/ProductsSection";
 
 export default function Home() {
   useEffect(() => {
@@ -17,6 +18,7 @@ export default function Home() {
       <AboutSection />
       <ServicesSection />
       <ProductionProcess />
+      <ProductsSection/>
     </>
   );
 }

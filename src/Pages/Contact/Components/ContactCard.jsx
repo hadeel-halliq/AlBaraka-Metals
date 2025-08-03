@@ -13,7 +13,7 @@ export default function ContactCard({
       <img src={icon} className="w-10" />
       <h2 className="text-lg font-bold">{title}</h2>
       <p className="text-sm text-[rgba(83,74,64,1)] font-medium">{paragraph}</p>
-      <a className="text-xs text-primary font-bold" dir="ltr" href={link}>
+      <a className="text-xs text-primary font-bold" dir="ltr" href={link} target="_blank">
         {linkText}
       </a>
     </div>

@@ -27,12 +27,14 @@ export default function Contact() {
             title="البريد الإلكتروني"
             paragraph="أرسل لنا رسالة وسنرد عليك في أسرع وقت ممكن"
             linkText="info@albarakametal.com"
+            link="https://mail.google.com/mail/?view=cm&fs=1&to=info@albarakametal.com"
           />
           <ContactCard
             icon={phoneIcon}
             title="اتصل بنا"
             paragraph="لدينا فريق دعم متاح خلال أوقات العمل الرسمية"
-            linkText="+0963 900 000 000"
+            linkText="+963 900 000 000"
+            link="tel:+963900000000"
           />
         </div>
         <EmailContactForm />

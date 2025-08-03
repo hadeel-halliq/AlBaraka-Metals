@@ -14,7 +14,7 @@ export default function FormInput({
         {label}
       </label>
       <input
-        className="h-12 w-[240px] sm:w-[280px]  border-[1px] rounded-lg text-right focus:outline-none focus:border-primary focus:border-2"
+        className="pr-3 h-12 w-[240px] sm:w-[280px]  border-[1px] rounded-lg text-right focus:outline-none focus:border-primary focus:border-2"
         id={id}
         type={type}
         name={name}
