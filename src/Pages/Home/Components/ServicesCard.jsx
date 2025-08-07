@@ -5,18 +5,26 @@ export default function ServicesCard({
   header,
   paragraph,
   buttonName,
-  bigImage,
+  isVideo,
+  videoSrc
 }) {
   return (
     <div
       dir="rtl"
-      className={`bg-white h-fit w-full ${bigImage ? `max-w-[350px]` : `max-w-[300px]` } mb-[30px] rounded-2xl shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] cursor-pointer transition duration-300 hover:-translate-y-2.5 hover:shadow-[0_4px_4px_0_rgba(0,0,0,0.6)]`}
+      className={`
+      bg-white w-full h-fit rounded-2xl overflow-hidden mb-[30px]
+        shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]
+        transition duration-300
+        ${isVideo ? 'max-w-[450px] cursor-default' : 'max-w-[300px] cursor-pointer hover:-translate-y-2.5 hover:shadow-[0_4px_4px_0_rgba(0,0,0,0.6)]'}
+      `}
     >
-     
-        <img
-          src={image}
-          className={`mb-5 rounded-xl w-full`}
-        />
+        {!isVideo ? 
+          <img src={image} className={`mb-5 rounded-xl w-full`} />
+        : 
+          <video controls>
+            <source  src={videoSrc} type="video/mp4"/>
+          </video>
+        }
 
       
       <div dir="rtl" className=" px-4 pb-5">

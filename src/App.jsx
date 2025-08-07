@@ -4,7 +4,7 @@ import Home from "./Pages/Home/Home";
 import Location from "./Pages/Location/Location";
 import Products from "./Pages/Proudcts/Products";
 import Contact from "./Pages/Contact/Contact";
-import MainLayout from "./Components/MainLayout/MainLayout";
+import MainLayout from "./MainLayout/MainLayout";
 import Error from "./Pages/Error/Error";
 
 function App() {
@@ -16,8 +16,8 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/contact" element={<Contact />} />
 
-        <Route path="*" element={<Error />} />
       </Route>
+        <Route path="*" element={<Error />} />
     </Routes>
   );
 }

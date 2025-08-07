@@ -1,15 +1,15 @@
-import FooterList from "../Common/FooterList";
+import FooterList from "../Components/Common/FooterList";
 
-import logo from "../../images/logo.jpg";
-import minPhone from "../../images/minPhone.png";
-import minLocation from "../../images/minLocation.png";
-import minMail from "../../images/minMail.png";
+import logo from "../images/logo.jpg";
+import minPhone from "../images/minPhone.png";
+import minLocation from "../images/minLocation.png";
+import minMail from "../images/minMail.png";
 
 const contactItems = [
   {
     icon: minPhone,
-    label: "000 000 900 963+",
-    href: "tel:+963900000000",
+    label: "330 888 948 963+",
+    href: "tel:+963948888330",
     external: true,
   },
   { icon: minLocation, label: "سوريا، حلب، حمص", external: true },
@@ -39,7 +39,7 @@ export default function Footer() {
         <div className="hidden md:w-[200px] lg:w-[300px] md:flex flex-col items-center gap-3 p-2.5">
           <img
             src={logo}
-            className="md:w-[140px] md:h-[100px] lg:w-[200px] lg:h-[130px] xl:w-[260px] xl:h-[150px] cursor-pointer rounded"
+            className="md:w-[140px] md:h-[100px] lg:w-[200px] lg:h-[130px] xl:w-[260px] xl:h-[150px]  rounded"
           />
           <p dir="rtl" className=" text-center text-sm sm:block sm:text-sm ">
             نحن رواد في مجال الصناعات المعدنية منذ أكثر من 25 عاماً نقدم منتجات

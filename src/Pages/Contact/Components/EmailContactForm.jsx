@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import Tittle from "../../Home/Components/Tittle";
 import FormInput from "./FormInput";
 import Button from "../../../Components/Common/Button";
@@ -15,7 +17,7 @@ export default function EmailContactForm() {
             الرسالة
           </label>
           <textarea
-            className="p-2 pr-3 h-12 w-[240px] sm:w-[280px] border rounded-lg text-right focus:outline-none focus:border-primary focus:border-2"
+            className="p-2 pr-3  w-[240px] h-[160px] sm:w-[280px] sm:h-[] border rounded-lg text-right focus:outline-none focus:border-primary focus:border-2"
             id="message"
             name="message"
             placeholder="اكتب رسالتك هنا"
